@@ -8,7 +8,7 @@ public class Employee
     private String name;
     private boolean fulltime;
     private Project project;
-
+    private Manager manager;
     
 
 /**
@@ -37,7 +37,10 @@ public class Employee
         {
             this.project=project;
         }
-
+    public void setManager(Manager manager)
+        {
+        this.manager=manager;
+        }
     public int getId()
         {
             return this.id;
@@ -57,7 +60,12 @@ public class Employee
         {
             return this.project;
         }
+    public Manager getManager()
+        {
+            return this.manager;
+        }
 }
+
 
 
 
